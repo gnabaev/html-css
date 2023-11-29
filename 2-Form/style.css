@@ -6,7 +6,6 @@
 }
 
 body {
-    width: 1440px;
     height: 1024px;
     background-image: linear-gradient(45deg, #f298de, #fdc5c5), linear-gradient(45deg, #ffffff, #ffa5a5);
     background-repeat: no-repeat;
@@ -15,8 +14,7 @@ body {
 form {
     width: 582px;
     height: 573px;
-    margin-top: 225px;
-    margin-left: 429px;
+    margin: 225px auto;
     border-radius: 10px;
     background: #ffffff;
     display: flex;

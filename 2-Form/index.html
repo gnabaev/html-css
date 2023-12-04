@@ -1,29 +1,49 @@
-<form action="/register" method="post">
-    <h1>Регистрация</h1>
-    <div>
-        <span>Уже есть аккаунт?</span>
-        <a href="#">Войти</a>
-    </div>
-    <div>
-        <label for="company"></label>
-        <input type="text" name="company" id="company" placeholder="Моя компания">
-    </div>
-    <div>
-        <label for="name"></label>
-        <input type="text" name="name" id="name" placeholder="Имя">
-        <label for="surname"></label>
-        <input type="text" name="surname" id="surname" placeholder="Фамилия">
-    </div>
-    <div>
-        <label for="email"></label>
-        <input type="email" name="email" id="email" placeholder="E-mail">
-    </div>
-    <button type="submit">Зарегистрироваться</button>
-    <div>
-        <span>
-            <input type="checkbox" name="doesagree" id="agree">
-            <label for="agree">Я прочитал и принимаю</label>
-        </span>
-        <a href="#">Условия использования</a>
-    </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="/register" method="post">
+        <h1>Регистрация</h1>
+        <div class="login">
+            <span>Уже есть аккаунт?</span>
+            <a href="#">Войти</a>
+        </div>
+        <div class="company">
+            <label for="company"></label>
+            <input type="text" name="company" id="company" placeholder="Моя компания">
+        </div>
+        <div class="nameSurname">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Имя">
+            <label for="surname"></label>
+            <input type="text" name="surname" id="surname" placeholder="Фамилия">
+        </div>
+        <div class="email">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+        </div>
+        <button type="submit" class="register">
+            <span>Зарегистрироваться</span>
+            <img src="/2-Form/images/arrow.png" alt="Стрелка">
+        </button>
+        <div class="agree">
+            <div>
+                <input type="checkbox" name="doesagree" id="agree">
+                <label for="agree">Я прочитал и принимаю</label>
+            </div>
+            <a href="#">Условия использования</a>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -61,6 +63,7 @@ body {
     width: 224px;
     height: 40px;
     background: #1F2937;
+    opacity: 60%;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -72,7 +75,7 @@ body {
     height: 14px;
     border: 0;
     background: transparent;
-    opacity: calc(10%);
+    opacity: 60%;
 }
 
 .searchForm #search {
@@ -82,7 +85,7 @@ body {
     border: 0;
     outline: none;
     font-size: 16px;
-    opacity: calc(60%);
+    opacity: 60%;
 }
 
 .article {
@@ -137,13 +140,10 @@ h1 {
 }
 
 .articleImage {
-    margin-bottom: 69px;
-}
-
-.articleImage img {
     width: 896px;
     height: 594px;
     border-radius: 5px;
+    margin-bottom: 69px;
 }
 
 .articleText {

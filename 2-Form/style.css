@@ -6,7 +6,10 @@
 }
 
 body {
-    height: 1024px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(45deg, #f298de, #fdc5c5), linear-gradient(45deg, #ffffff, #ffa5a5);
     background-repeat: no-repeat;
 }
@@ -14,7 +17,6 @@ body {
 form {
     width: 582px;
     height: 573px;
-    margin: 225px auto;
     border-radius: 10px;
     background: #ffffff;
     display: flex;
@@ -32,11 +34,13 @@ h1 {
 }
 
 .login {
-    width: 237px;
+    width: 100%;
     font-size: 18px;
     font-weight: 400;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
     margin-bottom: 47px;
 }
 
@@ -50,11 +54,12 @@ h1 {
 }
 
 .company {
+    width: 68%;
     margin-bottom: 22px;
 }
 
 .company input {
-    width: 394px;
+    width: 100%;
     height: 44px;
     padding-left: 11px;
     border-radius: 5px;
@@ -66,15 +71,16 @@ h1 {
 }
 
 .nameSurname {
-    width: 394px;
+    width: 68%;
     height: 44px;
     margin-bottom: 22px;
     display: flex;
     justify-content: space-between;
+    gap: 2px;
 }
 
 .nameSurname input {
-    width: 196px;
+    width: 50%;
     font-weight: 400;
     font-size: 16px;
     font-style: italic;
@@ -87,11 +93,12 @@ h1 {
 }
 
 .email {
+    width: 68%;
     margin-bottom: 22px;
 }
 
 .email input {
-    width: 394px;
+    width: 100%;
     height: 44px;
     padding-left: 11px;
     border-radius: 5px;
@@ -108,7 +115,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 394px;
+    width: 68%;
     height: 44px;
     margin-bottom: 22px;
     border-radius: 5px;
@@ -117,10 +124,11 @@ h1 {
     background: #089FE0;
     color: #ffffff;
     border: 0;
+    cursor: pointer;
 }
 
 .register span {
-    margin-left: 102px;
+    margin: 0 auto;
 }
 
 .register img {
@@ -128,11 +136,12 @@ h1 {
 }
 
 .agree {
-    width: 371px;
+    width: 100%;
     font-size: 14px;
     font-weight: 400;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 6px;
     align-items: center;
 }
 
@@ -169,4 +178,37 @@ h1 {
 .agree a {
     color: #089FE0;
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    form {
+        min-width: 400px;
+        margin: auto 10px;
+    }
+
+    .login {
+        margin-bottom: 22px;
+    }
+
+    .company {
+        margin-bottom: 6px;
+    }
+
+    .nameSurname {
+        flex-direction: column;
+        gap: 6px;
+        height: 94px;
+        margin-bottom: 6px;
+    }
+
+    .nameSurname input {
+        width: 100%;
+        height: 50%;
+    }
+
+    .agree {
+        flex-direction: column;
+        gap: 6px;
+    }
 }

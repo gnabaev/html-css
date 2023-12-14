@@ -1,0 +1,189 @@
+/* Buttons */
+
+.btn-primary {
+    font-weight: 800;
+    font-size: 17px;
+    color: var(--color-blue);
+    background: var(--color-white);
+}
+
+.btn-secondary {
+    font-weight: 800;
+    font-size: 17px;
+    color: var(--color-white);
+    background: var(--color-blue);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background: var(--item-hover);
+    color: var(--color-white);
+    transition: 0.5s;
+}
+
+/* Opportunity Section */
+
+.opportunities-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.opportunities-text__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: var(--color-black);
+}
+
+.opportunities-text__desc {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color-grey-05);
+}
+
+@media (max-width: 960px) {
+
+    .opportunities {
+        width: 87.2vw;
+        flex-direction: column;
+    }
+
+    .opportunities-text__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .opportunities-image {
+        width: 100%;
+        margin: 0 auto 32px auto;
+    }
+}
+
+/* Cards */
+
+.card {
+    padding: 48px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 32px 0px #4E5D7C52;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_light {
+    background: var(--color-white);
+}
+
+.card_dark {
+    background: var(--color-blue);
+}
+
+.card-badge-1 {
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 21px;
+    color: var(--color-white);
+    background: var(--card-badge-bg-green);
+    margin-bottom: 16px;
+}
+
+.card-badge-1 span {
+    font-weight: 800;
+}
+
+.card-badge-1_mod {
+    padding: 4px 16px;
+    min-height: 29px;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+.card-title_light {
+    color: var(--color-white);
+}
+
+.card-title_dark {
+    color: var(--color-black);
+}
+
+.card-desc {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.card-desc_light {
+    color: var(--color-white-06);
+}
+
+.card-desc_dark {
+    color: var(--color-grey-05);
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.card-parameters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-parameters__item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.8fr 1.2fr;
+    border-bottom: var(--main-sepline);
+    padding-bottom: 16.5px;
+    padding-top: 16.5px;
+}
+
+.card-parameters__item:nth-child(3) {
+    border-bottom: none;
+}
+
+.card-parameters__item div:nth-child(2) {
+    text-align: center;
+}
+
+.item__parameter_dark {
+    color: var(--color-grey);
+}
+
+.item__parameter_light {
+    color: var(--color-white);
+}
+
+.card-badge-2 {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    background: var(--card-badge-bg-yellow);
+    color: var(--color-white);
+}
+
+.card-badge-2_mod {
+    padding: 8px 16px;
+    min-height: 36px;
+}
+
+.card-btn {
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 47px;
+}

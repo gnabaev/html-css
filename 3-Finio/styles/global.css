@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-blue: #357EFE;
+    --color-white-08: rgba(255, 255, 255, 0.8);
+    --color-white-06: rgba(255, 255, 255, 0.6);
+    --color-grey-05: rgba(78, 93, 124, 0.5);
+    --color-grey: rgba(78, 93, 124, 1);
+    --header-sepline: solid 1px rgba(255, 255, 255, 0.16);
+    --footer-sepline: solid 1px rgba(255, 255, 255, 0.08);
+    --main-sepline: solid 1px rgba(78, 93, 124, 0.08);
+    --card-sepline: solid 1px rgba(255, 255, 255, 0.16);
+    --footer-bg-dark: #1A1D25;
+    --footer-text-lightwhite: rgba(255, 255, 255, 0.7);
+    --footer-text-darkwhite: rgba(255, 255, 255, 0.5);
+    --item-hover: #ffa500;
+    --card-badge-bg-green: #1ABC9C;
+    --card-badge-bg-yellow: #FFC736;
+}
+
+body {
+    background: var(--color-white);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
